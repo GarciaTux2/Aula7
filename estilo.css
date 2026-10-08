@@ -1,0 +1,124 @@
+/* Arquivo compartilhado pelas páginas PHP por meio da tag link. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f7f3ec;
+  color: #292721;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.chamada {
+  color: #87521f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h1 {
+  margin: 8px 0 30px;
+  font-size: clamp(28px, 5vw, 44px);
+}
+h2 {
+  margin-top: 28px;
+}
+.cardapio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+.produto {
+  background: white;
+  border: 1px solid #e6dfd4;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.foto {
+  height: 190px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: #eae3d7;
+  color: #645c50;
+}
+.foto img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  inset: 0;
+}
+.detalhes {
+  padding: 20px;
+}
+.codigo {
+  color: #6c655c;
+  font-size: 13px;
+}
+h3 {
+  margin: 8px 0;
+  font-size: 22px;
+}
+.preco {
+  color: #a33b20;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+form {
+  max-width: 480px;
+  display: grid;
+  gap: 12px;
+  background: white;
+  border: 1px solid #e6dfd4;
+  padding: 24px;
+  border-radius: 16px;
+}
+label {
+  font-weight: bold;
+}
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #9e968a;
+  border-radius: 8px;
+  font: inherit;
+}
+button,
+.botao {
+  display: inline-block;
+  background: #a33b20;
+  color: white;
+  border: 0;
+  border-radius: 8px;
+  padding: 13px 20px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:hover,
+.botao:hover {
+  background: #802b16;
+}
+a {
+  color: #8d321a;
+}
+:focus-visible {
+  outline: 3px solid #2764a3;
+  outline-offset: 3px;
+}
+.resumo {
+  max-width: 650px;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 24px 16px;
+  }
+}
+ 
